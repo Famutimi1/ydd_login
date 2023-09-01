@@ -1,0 +1,99 @@
+.back {
+  background: rgba(250, 250, 250, 1);
+  padding-top: 10px;
+}
+
+.back h2 {
+  margin-top: 0;
+}
+
+.con1 {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tt {
+  text-align: center;
+
+  h2{
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 3px !important
+  }
+
+  p{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    margin-top: 0;
+
+  }
+}
+
+.cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.last {
+  background: blue;
+}
+.last::before {
+  position: absolute;
+  content: "";
+  width: 314px;
+  margin-left: -313px;
+  height: 1px;
+  background: #999999;
+}
+
+.good::before {
+  background-color: blue !important;
+  position: absolute;
+  content: "";
+  width: 314px;
+  margin-left: -313px;
+  height: 1px;
+}
+
+.round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 40%;
+  border: 1px solid#999999;
+  font-size: 10px;
+}
+
+.ch1{
+  color:rgba(153, 153, 153, 1);
+  ;
+}
+
+.ch{
+  font-size: 10px;
+  color: rgba(153, 153, 153, 1);
+
+}
+
+.fill {
+  background-color: blue;
+  color: white;
+}
+
+.first {
+  border-color: blue;
+}
+
+.proginfo {
+  color: blue;
+}
+
