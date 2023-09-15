@@ -31,7 +31,7 @@ function Status({ curpage, setCurpage }) {
         <div className="con1">
           {dynamic.map((statusbar, index) => {
             return (
-              <div key={index} className="">
+              <div key={index} className="fl">
                 <div className={`cc ${index > 0 && " god"}`}>
                   <div
                     className={` ${index > 0 && "last"} ${

@@ -1,10 +1,12 @@
-
 form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   // row-gap: 30px;
-  column-gap:30px ;
+  column-gap: 40px;
+  align-items: flex-start;
+  // max-height: 1000px;
+  // flex: 0 0 calc(33.33% - 10px);
   // margin-left: auto;
   // margin-right: auto;
 
@@ -13,20 +15,44 @@ form {
   // }
 }
 
+.sam{
+  position: absolute;
+  margin-top: 15px;
+  margin-left: -14px;
+  color:#F57E77 ;
+
+}
+
+.err{
+  // color: #F57E77 !important;
+  // border: 1px solid  #F57E77!important;
+  background:#FDF7F6 !important ;
+}
+
+.errmsg{
+  color: #F57E77 !important;
+}
+
 .ib {
+  box-sizing: border-box;
   width: 457px;
-  height: 40px;
-  padding: 8px 16px 8px 16px;
-  border-radius: 5px;
+  // height: 58px;
+  max-height: 500px;
+  padding: 8px 16px;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 10px;
+  position: relative;
+
+  border-radius: 5px;
   background: rgba(239, 241, 249, 0.6);
-  margin-top: 20px;
+  margin-top: 48px;
   // margin-left: 20px;
 }
 
 .ib label {
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 13px;
   color: rgba(85, 85, 85, 1);
 }
 
@@ -37,7 +63,7 @@ form {
     background: transparent;
     margin-top: 3px;
     width: 100%;
-    height: 20px;
+    height: 19px;
     font-family: Inter;
     font-size: 17px;
     font-weight: 400;
@@ -46,49 +72,175 @@ form {
     text-align: left;
   }
 
-  input::placeholder{
-    color: rgba(85, 85, 85, 1);
+  input::placeholder {
+    color:#999999 !important;
+  }
+
+  
+
+  .select{
+    color:  #999999 !important ;
+  }
+
+  input[type="date"]::-webkit-datetime-edit::placeholder {
+    color: rgba(85, 85, 85, 1) !important;
+    font-size: 80px;
+  }
+
+  label:has(+ input:focus) {
+    color: rgba(0, 98, 255, 1);
+  }
+
+
+
+  // .phone {
+  //   background: transparent !important;
+  // }
+
+  .form-control {
+    background: transparent !important;
+    border: none;
+    outline: none !important;
+    width: 100%;
+
+    input{
+      outline: none;
+    }
+
+    
+    
+    // .country-list{
+
+    // }
+
+    
+  }
+  .country-list{
+    max-height: 130px!important;
+  }
+
+  .form-control:focus{
+    box-shadow: none;
+    border: none;
+  }
+
+  .svg {
+    position: absolute;
+    margin-left: 400px;
+    margin-top: -25px;
+  }
+}
+
+.fg {
+  box-sizing: border-box;
+}
+
+.b2 {
+  position: absolute;
+  // margin-bottom: 90px;
+  align-self: flex-start !important;
+  // height:300px !important ;
+}
+
+.c {
+  height: 58px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+
+  option {
+    width: 457px !important;
+    height: 43px !important;
   }
 }
 
 .drop {
-  max-height: 150px;
-  overflow: auto;
-  position: absolute;
-  width: 487px;
-  background: rgba(239, 241, 249, 0.6);
-  margin-top: 25px;
+  box-sizing: border-box;
+  // max-height: 250px;
+  // overflow:auto ;
+  // position: absolute;
+  width: 457px;
+  border-radius: 4px;
+  background: #f0f0f0;
+  margin-top: 20px;
   margin-left: -15px;
-  z-index: 1000;
+  z-index: 3;
+  opacity: 1;
   //   display: flex;
   //   flex-direction: column;
 
-  form {
+  .forms {
     display: flex;
     flex-direction: column;
   }
 
-  .ul{
-    height: 20px;
+  .ul {
+    height: 43px;
+    box-sizing: border-box;
     padding: 15px 0px 10px 20px;
   }
 
-  .ul:hover{
-    background: blue;
+  .ul:hover {
+    background: #0062ff;
 
-    label{
-        color: white;
+    label {
+      color: rgba(153, 153, 153, 1);
     }
   }
 
- 
+  label {
+    width: 100%;
+    margin-top: 11px;
+    font-size: 16px;
+    height: 100%;
+  }
 
-    label{
-        margin-top: 15px;
-    }
-
-  
   input {
     display: none;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .ib {
+    margin-top: 25px;
+  }
+}
+
+// @media screen and (max-width: 1060px){
+//   .ib{
+//     width: 300px;
+//   }
+
+//   .svg {
+//     margin-left: 250px !important;
+//   }
+// }
+
+@media screen and (max-width: 428px) {
+  .ib {
+    width: 296px;
+  }
+
+  .svg {
+    margin-left: 240px !important;
+  }
+
+  .country-list{
+    width: 200px !important;
+    max-height: 120px!important;
+  }
+
+  .drop {
+    width: 296px;
+
+    .ul {
+      height: 20px;
+      padding: 0px 0px 0px 20px;
+    }
+  }
+
+  .sam{
+    margin-top: 10px;
+    font-size: 10px;
   }
 }

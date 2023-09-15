@@ -1,0 +1,143 @@
+.verify {
+  justify-self: center;
+  text-align: center;
+  align-self: center;
+  margin-top: 200px;
+//   width: 468px;
+  //    margin-bottom: auto;
+  h2 {
+    margin-bottom: 8px !important;
+  }
+
+  .na {
+    color: #555;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    width: 468px
+  }
+
+  input {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #555;
+    margin-right: 12px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .lower {
+    margin-top: 40px;
+
+    p {
+      margin-top: 8px !important;
+      color: hsla(0, 0%, 33%, 1);
+      span {
+        color: hsla(217, 100%, 50%, 1) !important;
+      }
+    }
+  }
+
+  .btn {
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: hsla(217, 100%, 50%, 1);
+    border-radius: 4px;
+    padding: 16px;
+    border: none;
+  }
+}
+
+.success {
+  justify-self: center;
+  text-align: center;
+  margin-top: 249px;
+  p {
+    color: #555555;
+  }
+}
+
+.redirect {
+  justify-self: center;
+  text-align: center;
+  margin-top: 289px;
+
+  .rd{
+
+    h1{
+        margin-bottom: 10px !important;
+    }
+
+    p{
+        color: #555555;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+  }
+
+
+  //   h1{
+  //   }
+
+  .bc {
+    width: 476px;
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 72px;
+  }
+
+  .bh {
+    display: flex;
+    width: 158px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #0062FF;
+    border: 1px solid #0062FF ;
+    border-radius: 4px;
+    background: transparent;
+  }
+
+  .lg {
+    display: flex;
+    width: 158px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #FFFFFF;
+    background: #0062FF;
+    border: none;
+    border-radius: 4px;
+  }
+}
+
+@media screen and (max-width: 500px){
+     .na{
+        width: 350px !important;
+        margin-left: auto;
+        margin-right: auto;
+        // text-align: center !important;
+     }
+}
+
+@media screen and (max-width: 360px){
+    .na{
+       width: 340px !important;
+       margin-left: auto;
+       margin-right: auto;
+       // text-align: center !important;
+    }
+}

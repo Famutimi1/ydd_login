@@ -6,56 +6,71 @@ html {
 
 }
 
+#root{
+  height: 100%;
+}
+
 body {
   box-sizing: border-box;
+  font-family: "Inter";
   // height: 100vh;
   // width: 100vw;
-  font-family: "Inter";
-  
-
   /* box-sizing: border-box; */
 }
 
 .App {
-  /* padding: 1px; */
   display: flex;
   justify-content: center;
-  max-height: 100vh;
+  // height: 100vh;
+  min-height: 900px;
+  height: 100vh;
+  // height: 900px;
+  // min-height: 100dvh;
+  // min-width: 100dvw;
+  background: linear-gradient(116.82deg, rgba(0, 98, 255, 0.2) 0%, rgba(255, 0, 229, 0.2) 100%);
+  position: relative;
+  // position: static;
   // height: 100%;
   // width: 100%;
-  height: 100dvh;
-  width: 100dvw;
-  background: linear-gradient(116.82deg, rgba(0, 98, 255, 0.2) 0%, rgba(255, 0, 229, 0.2) 100%);
-  // position: static;
-  padding: 1rem;
-  position: relative;
   
+
 }
 
 .modale {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
   position: rela;
   z-index: 100;
   box-sizing: border-box;
-  width: 1100px;
-  height: 500px;
-  margin: auto;
+  width: 90%;
+  height: 90%;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-height:2000px ;
+  // margin: auto;
   background: white;
+  border-radius: 12px;
+  box-sizing: border-box;
 
   /* margin-top: 40px; */
 }
 
 .but{
+  // align-self: baseline;
+  // justify-self: baseline;
   box-sizing: border-box;
+  margin-top: auto;
+  margin-bottom: 151px;
   width:100%;
   display: flex;
-  // justify-content: center;
-  // justify-content: space-between;
-  padding: 0 100px 0 100px;
-  // margin-top: 80px;
+  padding: 0 15%;
+  // margin-top: 110px;
 
   button{
-    height: 50px;
-    width: 150px;
+    height: 51px;
+    width: 190px;
     border-radius: 5px;
     border: none;
     font-size: 25px;
@@ -64,6 +79,119 @@ body {
   .next{
     align-self: flex-end;
     margin-left: auto;
+    color:rgba(255, 255, 255, 1);
+    background-color:rgba(0, 98, 255, 1);
+    position: relative;
 
+  }
+
+  .nextb{
+    background-color: #999; 
+  }
+
+  .prev{
+    border: 1px solid rgba(0, 98, 255, 1) ;
+    color:rgba(0, 98, 255, 1) ;
+    background: transparent;
+  }
+
+  .svgn{
+    // position: absolute;
+    // margin-top: 20px;
+    margin-left: 15px;
+  }
+
+  .svgp{
+    margin-right: 20px;
+  }
+  .vf{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-left: auto;
+  }
+}
+
+
+@media screen and (max-width: 990px){
+  .but{
+    padding: 0 25%;
+    margin-bottom: 30px;
+    // margin-top: -22px;
+  }
+
+  
+  .vf{
+    p{
+      font-size: 13px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 852px){
+  .but{
+    padding: 0% 19.5%;
+    margin-bottom: 70px;
+  }
+
+  
+  .vf{
+    p{
+      font-size: 13px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px){
+  .but{
+    padding: 10% 16.5%;
+  }
+
+  .vf{
+    p{
+      font-size: 13px;
+    }
+  }
+}
+
+@media screen and (max-width: 428px){
+
+
+  // .modale .{
+    
+  // }
+  .but{
+    justify-content: center ;
+    text-align: center;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 0;
+    margin-top: auto;
+    margin-bottom: 16px;
+  }
+
+  button{
+    width: 296px !important;
+    // width: 100% !important;
+  }
+
+  .next{
+    align-self: center !important;
+    margin-left: 0 !important;
+  }
+
+  .prev{
+    align-self: center;
+    margin-bottom: 8px;
+  }
+
+  .vf{
+    justify-content: center;
+    margin-right: auto;
+  }
+
+  .vn{
+    margin-left: auto;
   }
 }
